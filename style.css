@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #343334;
+    border: 5px solid green;
+}
+
+.card{
+    position: relative;
+    cursor: pointer;
+    width:300px;
+}
+
+.face1{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    height: 200px;
+    background-color: black;
+    box-shadow: 5px 5px 15px grey;
+    transition: all 0.5s;
+    transform: translateY(100px);
+     
+}
+
+.card:hover .face1{
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.imgbox{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+
+.imgbox h1{
+    text-transform: capitalize;
+    color: white;
+    transition: all 0.5s;
+}
+
+.icon{
+    fill:white;
+}
+
+.card:hover .imgbox h1{ 
+    color:rgb(168, 245, 16);
+}
+
+.card:hover .imgbox .icon{
+    fill:rgb(168, 245, 16);
+}
+
+/*SEGUNDO CUADRITO*/
+
+.face2{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    height: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    transition: all 0.5s;
+    transform: translateY(-100px);
+    z-index: -1;
+}
+
+.card:hover .face2{
+    transform: translateY(0);
+}
+
+.face2 p{
+    color:black;
+    margin-bottom: 15px;
+}
+
+.face2 a{
+    border: 1px solid rgb(248, 8, 188);
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:rgb(248, 8, 188);
+    transition: all 0.5s;
+}
+
+.face2 a:hover{
+    color:yellowgreen;
+    background-color: grey;
+    border: 1px solid yellowgreen;
+}
+
